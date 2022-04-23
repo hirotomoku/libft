@@ -6,7 +6,7 @@
 /*   By: hitakase </var/mail/hitakase>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:28:31 by hitakase          #+#    #+#             */
-/*   Updated: 2022/04/19 18:28:34 by hitakase         ###   ########.fr       */
+/*   Updated: 2022/04/23 22:46:29 by hitakase         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	size_t	src_len;
 
 	if (dstsize == 0 && src != NULL)
-		return (ft_strlen(src) + dstsize);
+		return (ft_strlen(src));
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
 	if (dstsize <= dest_len)
